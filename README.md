@@ -1,4 +1,4 @@
-giftcenter
+Giftcenter
 ==========
 
-wine spectotor gift center
+Wine Spectator gift center
