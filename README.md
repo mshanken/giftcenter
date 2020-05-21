@@ -1,3 +1,5 @@
+**Uses gh-pages branch for gift center site!!**
+
 Giftcenter
 ==========
 
