@@ -119,7 +119,7 @@ $enable-transitions:        true !default;
 $enable-hover-media-query:  false !default; // Deprecated, no longer affects any compiled CSS
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
-
+$enable-important-utilities:  true !default;
 
 // Spacing
 //
@@ -137,8 +137,10 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
+    4a: ($spacer * 2.6),
     5: ($spacer * 3),
-    6: ($spacer * 5),
+    6: ($spacer * 4),
+    7: ($spacer * 5),
     8: ($spacer * 8),
     11: ($spacer * 11)
   ),
@@ -151,12 +153,13 @@ $sizes: () !default;
 $sizes: map-merge(
   (
     25: 25%,
+    40: 40%,
     50: 50%,
     75: 75%,
     80: 80%,
     100: 100%,
-    18: 18rem,
-    21: 21rem,
+    13: 13rem,
+    22: 22rem,
     29: 29rem,
     auto: auto
   ),
@@ -257,8 +260,10 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-// $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
-$font-family-sans-serif:      'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lora:100,200,300,400,500,600,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open Sans:100,200,300,400,500,600,700,900');
+$font-family-serif:           Lora, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:      'Open Sans', "Helvetica Neue", Arial, sans-serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
