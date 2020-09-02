@@ -1,0 +1,20 @@
+{
+  "globals": {
+    "title": "Wine Spectator Gift Center | M. Shanken Communications, Inc.",
+    "site_tagline":"Wine Spectator",
+    "subject":"",
+    "url": "www.winespectator.com",
+    "description": "Wine Spectator",
+    "keywords": "",
+    "copyright": "M. Shanken Communications, Inc.",
+    "name": "Wine Spectator Gift Center",
+    "email": "dev@mshanken.com",
+    "layout": "false",
+    "ga": true,
+    "analytics": "UA-23484466-20",
+    "dfp": false,
+    "openGraph": false,
+    "typekit": false,
+    "disqus": false
+  }
+}
