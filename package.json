@@ -28,9 +28,9 @@
     "jquery": "cp node_modules/jquery/dist/jquery.js _site/public/js/vendor/",
     "jquery-1": "jquery-builder > _site/public/js/vendor/jquery-1.11.1.js",
     "jquery-2": "jquery-builder --version 2.1.1 > _site/public/js/vendor/jquery-2.1.1.js",
-    "server": "harp server _site",
-    "compile": "harp compile _site www && grunt concat",
-    "gh-pages": "harp compile _site www && grunt concat && grunt copy:ghpages",
+    "serve": "harp ./_site",
+    "compile": "harp ./_site ./www && grunt concat && grunt uglify",
+    "gh-pages": "harp ./_site ./www && grunt concat && grunt uglify && grunt copy:ghpages",
     "static": "grunt harp:staticserver",
     "test": ""
   },
@@ -39,10 +39,8 @@
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
     "html5shiv": "^3.7.3",
-    "jay-respond": "^1.4.3",
-    "jquery": "^3.1.0",
-    "jquery-builder": "^0.7.0",
-    "modernizr": "^3.7.1"
+    "jquery": "^3.5.0",
+    "modernizr": "^3.11.8"
   },
   "devDependencies": {
     "browser-sync": "^2.27.7",
