@@ -10,7 +10,7 @@
     "name": "Wine Spectator Gift Center",
     "email": "dev@mshanken.com",
     "layout": "false",
-    "ga": true,
+    "ga": false,
     "analytics": "UA-23484466-20",
     "dfp": false,
     "openGraph": false,
